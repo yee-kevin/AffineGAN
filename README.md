@@ -1,27 +1,10 @@
 # AffineGAN
 
-This is the official pytorch implemention for the paper "Facial Image-to-Video Translation by a Hidden Affine Transformation" in ACM Multimedia 19.
-
-|                    Happy                     |                    Anger                     |                   Surprise                   |                   Contempt                   |
-| :------------------------------------------: | :------------------------------------------: | :------------------------------------------: | :------------------------------------------: |
-| ![vid_0026_latest](GIFS/vid_0026_latest.gif) | ![vid_0001_latest](GIFS/vid_0001_latest.gif) | ![vid_0010_latest](GIFS/vid_0010_latest.gif) | ![vid_0003_latest](GIFS/vid_0003_latest.gif) |
-
-|                    Eye Up                    |                  Close Eye                   |                 Drum Cheeks                  |
-| :------------------------------------------: | :------------------------------------------: | :------------------------------------------: |
-| ![vid_0002_latest](GIFS/vid_0002_latest.gif) | ![vid_0009_latest](GIFS/vid_0009_latest.gif) | ![vid_0011_latest](GIFS/vid_0011_latest.gif) |
-
-
+This code is adapted from the official pytorch implemention for the paper "Facial Image-to-Video Translation by a Hidden Affine Transformation" in ACM Multimedia 19 at https://github.com/sunlightsgy/AffineGAN.
 
 ## Installation
 
 - Python 3.6
-
-- Clone this repo:
-
-```
-git clone https://github.com/sunlightsgy/AffineGAN.git
-cd AffineGAN
-```
 
 - Install PyTorch 0.4+(1.1 has been tested) and torchvision from [http://pytorch.org](http://pytorch.org/) and other dependencies (e.g., [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)). 
   - For pip users, please type the command `pip install -r requirements.txt`.
@@ -82,11 +65,6 @@ python train.py --dataroot /path/to/dataset --name your_exp_name --checkpoints_d
 - If you do not use the local patch for mouse, add option `--no_patch`.
 - For continue training, add `--continue_train` and the model will be trained from the latest model.
 - The current version only supports training on single GPU, and set batch_size to 1.
-
-### Pretrained Models
-
-We provide some [pretrained models](https://drive.google.com/open?id=1zVhM2VQTirvMQyZmYrjfA5qLf8UdkS54) for all the expressions. Note that it is may not be the optimal one we have, and may perform badly in some online images if they are much different from our training samples. Please place the model in `/path/to/checkpoints`. For example, `/path/to/checkpoints/happy/latest_net_G.pth`, where **happy** is the name of experiment specified in `--name` option.
-
 
 ### Generation
 
