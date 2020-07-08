@@ -2,8 +2,8 @@
 
 This code is adapted from the official pytorch implemention for the paper "Facial Image-to-Video Translation by a Hidden Affine Transformation" in ACM Multimedia 19 at https://github.com/sunlightsgy/AffineGAN.
 
-|                    UTDAL_Happy                     |
-| :------------------------------------------: |
+|		  UTDAL_Happy (using pretrained weights)	     |
+| :--------------------------------..........----------: |
 | ![vid_0026_latest](GIFS/UTDAL_04651v113_generated.gif) |
 
 
