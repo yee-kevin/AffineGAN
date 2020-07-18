@@ -1,3 +1,7 @@
+'''
+Converts folder of image frames into a GIF
+'''
+
 import imageio
 import glob
 
