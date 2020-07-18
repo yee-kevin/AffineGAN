@@ -20,9 +20,7 @@ This code is adapted from the official pytorch implemention for the paper "Facia
 
 ### Datasets preparation
 
-- As not all the volunteers agree to make their expressions public, we cannot release the whole CK-Mixed and Cheeks&Eyes dataset. Instead we provide some examples in` ./datasets/`.
-- You can create your own dataset following the examples, with the first frame in your training videos is the initial expression. You can download [CK+ dataset](http://www.consortium.ri.cmu.edu/ckagree/) for Gray-scale expression training.
-- Note that for **Cheeks&Eyes**, we ask only less than 100 volunteers collect these data using the camera of their cellphone. Thus, the dataset collection is easy. Details can be seen in the paper.
+- You can create your own dataset following the examples, with the first frame in your training videos is the initial expression.
 - Some tips for the dataset collection. If you don't follow these tips, you can still train the model, but may harm the performance to some degree.
   - Proper aspect ratio, as we will resize the image to 256*256 when training.
   - Make the head centered in the image.
